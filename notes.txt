@@ -1,0 +1,89 @@
+ <!-- OUR FIRST JS SESSION
+    <h6>Our First JS Session.</h6>
+    <h1>Js Session</h1>
+    <h7>SESSION</h7>
+    console.log("HI JS")
+    ES6.-->
+    EcmaScript--->A js update which contain modifications
+    ---is the most stable version of javascript
+    --prefer.
+-->import/export modules
+--->arrow function
+
+JS SESSION 01 - 25/01/14
+
+JS DATA TYPE
+
+1) IS JS STATIC OR DYNAMICALLY TYPED? --> DYNAMICALLY TYPED.
+
+Data Types:
+1)var
+2)let
+3)const
+
+--->scope of variable
+1)var-->global scope
+2)let-->block scope
+3)const-->block scope
+
+---> redeclaration and reinitialization
+1)var-->redeclaration allowed and reinitialization allowed
+2)let-->redeclaration not allowed and reinitialization allowed
+3)const-->redeclaration not allowed and reinitialization not allowed
+
+--->hoisting
+1)var
+2)let
+3)const
+
+What is hoisting?
+When we declare a variable or function at the top before execution it is known as hoisting.
+
+major difference between let and const:
+const need to declared and assigned a value
+whereasa as let can be declared and assigned a value later
+
+data types in js?
+--string
+--number
+--boolean
+--null
+
+// let varOne=100 //data type? -->number
+// console.log(typeof varOne)
+// varOne="JS"
+// console.log(typeof varOne)
+// varOne=null
+// console.log(typeof varOne)
+// varOne=true
+// console.log(typeof varOne)
+
+// anything which changes seems to be dynamic
+// so we proved.Js is dynamically typed.
+
+Objects:
+Object are a collection of key:value pairs
+const firstName="Naqueeb"
+const lastName="Patel"
+const city="Pune"
+const country="India"
+//details-->objects
+const details={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    city:"Pune",
+    country:"India"
+}
+//how do we target values in a object?
+details.city="Mumbai"
+// console.log(details)
+details.country="UAE"
+console.log(details)
+
+//do js consist of arrays? 
+//yes but in the type of objects
+let myArray=['Naqueeb',50,'Pune']
+console.log(myArray)
+console.log(typeof myArray)
+
+
