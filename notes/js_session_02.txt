@@ -1,0 +1,99 @@
+DATE: 26/01/24
+
+Array: 
+It is a collection of data which can be be of same or different type.
+
+// Indexing?
+let myArray=[1,true,"Naqueeb","Pune",2500]
+
+// 1. Target based ON INDEX.
+
+// console.log(myArray[3])
+// console.log(myArray[1])
+
+// 2.Target based on Element?
+
+console.log(myArray.indexOf("Pune"))
+
+// Array of Objects
+
+const detailsOne={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    city:"Pune",
+    mobile:5623232
+}
+
+const detailsTwo={
+    firstName:"Alice",
+    lastName:"Harry",
+    city:"US",
+    mobile:56565
+}
+
+// const details=[{} , {} , {}]-->Structure
+//API-Application Programming Interface
+const details=
+[
+    {
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    city:"Pune",
+    mobile:5623232
+    },
+    {
+    firstName:"Alice",
+    lastName:"Harry",
+    city:"US",
+    mobile:56565
+    }
+]
+
+-->What are Functions?
+A function in JavaScript is a reusable piece of code that performs a specific task. 
+const numOne=100
+const numTwo=200
+const result=numOne+numTwo
+
+// const numOne=100
+// const numTwo=200
+// const result=numOne+numTwo
+// console.log(result)
+
+//Functions in JS are declared using "function" keyword.
+
+// function printMessage(){
+//     console.log("HI JS")
+// }
+
+// //how do we call a function?
+// // by function name and () 
+// printMessage()
+// //operation perform
+// //operation perform
+// //operation perform
+// //operation perform
+// printMessage()
+
+// 1.Parameterized Functions.
+// 2.Non Parameterized Function.
+
+// function printMessage(){  //function decleration
+//     console.log("Hi js")  //function body
+// }
+// printMessage() //function execution or function calling
+
+function printMessage(text){
+    return text
+}
+
+// printMessage("HI JS")
+//operation perform
+//operation perform
+//operation perform
+//operation perform
+// const msg=printMessage("HI JS")
+console.log(printMessage("HI JS"))
+// console.log(msg)
+
+
