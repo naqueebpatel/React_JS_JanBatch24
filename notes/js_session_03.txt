@@ -1,0 +1,78 @@
+condition's?
+if we want a line of code/or an action to be performed when a certain condition is fulfilled in this case we use condition statements
+
+let num=100
+if(num>100){
+    num=num+100
+}else{
+    console.log(num)
+}
+
+// condition's?
+// if we want a line of code/or an action to be performed when a certain condition is fulfilled in this case we use condition statements
+
+// 1)age<18-->not allowed
+//     a)age>10 -->Joint account allowed
+// 2)age>18-->Allowed
+
+// nested if else
+
+// let age=19
+// if(age<18){
+//     console.log("NOT ALLOWED")
+//     if(age>10){
+//         console.log("Joint Account Allowed")
+//     }
+//     else{
+//         console.log("Joint Account not Allowed")
+//     }
+// }else{
+//     console.log("Allowed")
+// } 
+
+// if(){
+    
+// }
+// else if(){
+    
+// }else if(){
+    
+// }
+// else{
+    
+// }
+
+// is there any diff between == and this ===?
+
+// a) == --> it is used to compare two values
+// b) === --> it is used to compare two values as well as their types
+
+const valOne=3  //number
+const valTwo="3"  //string-->original type?-->string?
+// console.log(typeof valOne)
+// console.log(typeof valTwo)
+console.log(valOne==valTwo) //--> number==string-->true?
+console.log(valOne===valTwo) //--> number===string-->false?
+
+// Problem-Statement?
+
+
+
+// Dry Run?
+var value=
+switch(typeof value){ //typeof value -->string/number/object/boolean/
+    case "string":
+        console.log("string")
+        break
+    case "number":
+        console.log("IT IS A NUMBER")
+        break
+    case "boolean":
+        console.log("IT IS A BOOLEAN")
+        break
+    case "object":
+        console.log("IT IS A OBJECT")
+        break
+    default:
+    console.log("No cases matched")
+}
