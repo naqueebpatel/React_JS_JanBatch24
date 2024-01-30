@@ -1,0 +1,115 @@
+Events:
+1)onclick
+2)onsubmit
+3)onchange
+4)onkeyup
+5)onkeydown
+6)onmouseover
+
+// Arrow Function?
+// Introduced with Es6 arrow function are way of writing functions in a shorter and better way.
+
+// function numSum(a,b){
+//     console.log(a+b)
+// }
+
+// const numSum=function(a,b){
+//     console.log(a+b)
+// }
+
+// syntax: ( )   =>   {      }
+
+const numSum=(a,b)=>{
+    console.log(a+b)
+}
+
+const numMultiply= (a,b)=>{
+    console.log(a*b)
+}
+
+numSum(10,20)
+numMultiply(5,10)
+
+// const display=()=>{
+//     console.log("HI JS")
+// }
+
+// display()
+
+// const numSum=(a,b)=>{
+//     return a+b  //1 line return by default
+// }
+
+
+const numSum=(a,b)=>a+b  //assume we want to return the value
+const numMultiply=(a,b)=>a*b
+
+const result=numMultiply(10,20)
+console.log(result)
+
+DESTRUCTURING?
+IT IS THE WAY OF EXTRACTING ONLY WHAT IS NEEDED.
+
+1) ARRAY
+
+const vehiclesArray=["Ninja H2r","Maybach","Defender","Activa"]
+console.log(typeof vehiclesArray)
+
+console.log("Array",vehiclesArray) //whole array
+
+console.log("All elements")
+for(let i=0;i<vehiclesArray.length;i++){ //all elements
+    console.log(vehiclesArray[i])
+}
+
+console.log("1 ELEMENT")
+console.log(vehiclesArray[2]) //only 1 element
+console.log(vehiclesArray[3])
+
+
+console.log("USING ARRAY DESTRUCTURING")
+// categories?
+const [a,b,c,d]=vehiclesArray //the order is important
+console.log(d)
+
+
+2) OBJECT
+
+// OBJECT DESTRUCTURING?  //ORDER DOESNT MATTER
+
+const details={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    city:"Pune",
+    country:"India",
+    phone:565655,
+    status:false
+}
+
+// console.log(details.phone)
+// console.log(details.country)
+// console.log(details.lastName)
+
+// const {phone,country,lastName}=details
+// console.log(phone)
+// console.log(country)
+// console.log(lastName)
+
+// const {status}=details
+// console.log(status)
+
+// const name=details.firstName
+// console.log(name)
+
+// const {firstName}=details
+// console.log(firstName)
+
+// const firstName=details.firstName
+// const lastName=details.lastName
+// const fullName=firstName+" "+lastName
+// console.log(fullName)
+
+const {firstName,lastName}=details  //Name
+const fullName=firstName+" "+lastName
+console.log(fullName)
+

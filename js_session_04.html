@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handleSubmit()">
+        <button id="btnOne" onclick="handleButton()">Click Me!</button>
+    <input type="text" id="textOne" placeholder="KEY UP" onkeyup="handleOnkeyUp()">
+
+    <input type="text" id="textTwo" placeholder="KEY DOWN" onkeydown="handleOnKeyDown()">
+    </form>
+    
+</body>
+<script>
+    function handleButton(){
+        document.getElementById("btnOne").style.background="red"
+    }
+
+    function handleInput(){
+        console.log("ONCHANGE")
+    }
+
+    function handleOnkeyUp(){
+        console.log("KEY UP")
+    }
+    
+    function handleOnKeyDown() {
+        console.log("KEY DOWN")
+    }
+
+    function handleSubmit(){
+        console.log("FORM SUBMITTED")
+    }
+</script>
+<style>
+    #btnOne{
+        border-radius: 25px;
+        padding:10px;
+    }
+</style>
+</html>
