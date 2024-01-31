@@ -1,0 +1,46 @@
+// // Ternary Operators?
+
+// if(condition){
+//     //logic
+// }
+// else{
+//     //logic
+// }
+
+// const value=20
+// if(value>10){  //condition
+//     console.log("VALUE IS GREATER THAN 10")  //if logic
+// }else{
+//     console.log("VALUE IS LESS THAN 10")   //else logic
+// }
+
+// syntax: condition ?  if logic : else logic
+
+const value=20
+value > 10 ? console.log("VALUE IS GREATER THAN 10") :  console.log("VALUE IS LESS THAN 10")
+
+// Tempelate Literals?
+// Concatenation of Strings ...
+
+const details={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    city:"Pune",
+    country:"India",
+    phone:565655,
+    status:false  //true-->Active || false --->Paused
+}
+
+// const fullName=details.firstName+ " " + details.lastName
+// console.log(fullName)
+
+// My first name is -----  and last name is ----.
+
+//syntax :  `${ Js Code } string....`
+
+// const fullName=`My first Name is ${details.firstName} and last name is ${details.lastName}`
+// console.log(fullName)
+const {status}=details
+// const val=status?"Active":"Paused"
+// console.log(`My status is ${status?"Active":"Paused"}`)
+console.log(`My status is ${val}`)
