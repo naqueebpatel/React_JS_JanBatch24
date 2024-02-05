@@ -1,0 +1,71 @@
+const name="Sameer"
+console.log(name.includes("xyz"))  //name-->sam-->xyz-->false
+
+//LIVE SEARCH
+
+
+// ---------------ADIB--------  SEARCH BOX.
+// 1)ADIB
+// 2)ADIB SHAIKH
+// 3)SAMEER
+// 4)SAMEER SHAIKH
+
+// ---------------ADIB S--------  SEARCH BOX.
+// // 1)ADIB
+// 2)ADIB SHAIKH
+// // 3)SAMEER
+// // 4)SAMEER SHAIKH
+
+
+// // SPREAD OPERATOR?
+// // IT IS USED TO SPREAD THE CONTENTS OF AN ARRAY OR AN OBJECT.
+
+// const myArrOne=[1,2,3]
+// const myArrTwo=[4,5,6]
+// console.log(myArrOne)
+// myArrOne.map(elem=>console.log(elem))
+
+// // -->spread operator
+// // syntax: ... three dots
+
+// console.log(...myArrOne,...myArrTwo)
+
+function sortArray(arrOne,arrTwo){
+    let sortArr=[...arrOne,...arrTwo].sort((a,b)=>a-b)
+    console.log(sortArr)
+}
+
+sortArray([5,3,1],[1,2,3])
+
+
+function displayData({firstName,phone}){  //destructuring
+    console.log(firstName,phone)
+}
+
+const details={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    phone:56565
+}
+
+// displayData(details.firstName,details.phone)
+displayData(details)
+
+const details={
+    firstName:"Naqueeb",
+    lastName:"Patel",
+    phone:56565
+}
+
+// CRUD
+// C-->CREATE
+// R-->READ
+// U-->UPDATE
+// D-->DELETE
+
+console.log(details)
+// api request--->firstName:"Naqueeb",phone:999999
+// later takes over the earlier.
+// const updatedDetails={...details,phone:99999}
+// console.log(updatedDetails)
+
