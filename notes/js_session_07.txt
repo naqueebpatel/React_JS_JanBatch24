@@ -69,3 +69,55 @@ console.log(details)
 // const updatedDetails={...details,phone:99999}
 // console.log(updatedDetails)
 
+// for?
+
+// for in
+// for of
+// for each
+
+// map
+// filter
+
+// major diff?
+// chaining allow.
+
+// const myArr=[1,2,3,4,5,6]
+// //square
+// const squareArr=myArr.map((elem)=>{return elem*elem})
+// console.log(squareArr)
+// const filterArr=squareArr.filter((elem)=>{
+//     if (elem%2==0){
+//         return elem
+//     }
+// })
+// console.log(filterArr)
+
+
+const myArr=[1,2,3,4,5,6]
+
+const newArr=myArr.map((elem)=>{return elem*elem}).filter((elem)=>{
+    if (elem%2==0){
+        return elem
+    }
+})
+console.log(newArr)
+
+Assignment:
+
+api--> https://dummyjson.com/products
+const myData=[store]
+1)product name,price,stock --display
+2) category --> laptops ---> price increase by +5000
+3) filter laptops whose price is greater than 28000
+
+
+
+
+
+
+
+
+
+
+
+
