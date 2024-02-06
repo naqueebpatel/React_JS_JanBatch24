@@ -1,0 +1,81 @@
+SYNCHRONOUS JS-
+WHEN A CODE EXECUTES LINE BY LINE WITHOUT DEPENDING ON ONE ANOTHER.
+console.log("FOUR")
+console.log("ONE")
+console.log("TWO")
+console.log("THREE")
+
+// IT MAINTAINS THE ORDER.
+
+ASYNCHRONOUS JS-
+IT DOESNT EXECUTE LINE BY LINE OR SOMETIMES DOESNT FOLLOW THE ORDER.
+
+// setTimeout(callBack,time in millisecond)
+// 1sec =1000ms
+
+console.log("ONE")
+console.log("TWO")
+setTimeout(()=>{  //EXECUTION
+    console.log("THREE")
+},2000)
+console.log("FOUR")  
+
+//PROMISES: IT IS A JS OBJECT.
+AMAZON:
+ORDER-->BOOTS
+1)TRACKING-->PENDING STATE
+2)DELIVERED-->RESOLVED STATE
+3)UNDELIVERED-->REJECT STATE
+
+//PROMISE CLASS
+
+let promise=new Promise(callBackFn)
+
+let promise=new Promise((resolve,reject)=>{
+    resolve("PACKAGE DELIVERED")
+})
+
+console.log(promise)
+
+//BILL PAYMENT INTERFACE
+PER MONTH:1000
+ATLEAST: 70%-->700
+PER MONTH 700>CONNECTION ACTIVE
+PER MONTH 70% OR 700 < CONNECTION BLOCKED
+
+when we make an api call it returns a promise
+.then-->resolve
+.catch-->resolve
+
+function billPaymentInterface(amount){
+    let pro=new Promise((Resolve,reject)=>{
+        if(amount>=700){
+            resolve("CONNECTION ACTIVE")
+        }else{
+            reject("CONNECTION BLOCKED")
+        }
+    })
+    console.log(pro)
+}
+
+billPaymentInterface(500)
+
+function billPaymentInterface(amount){
+    return new Promise((Resolve,reject)=>{
+        if(amount>=700){
+            resolve("CONNECTION ACTIVE")
+        }else{
+            reject("CONNECTION BLOCKED")
+        }
+    })
+    console.log(pro)
+}
+
+billPaymentInterface(500).then((res)=>{
+    console.log(res)
+}).catch((err)=>{
+    console.log(err)
+})
+
+
+
