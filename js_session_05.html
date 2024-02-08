@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para"></p>
+</body>
+<script>
+//    fetch("https://jsonplaceholder.typicode.com/users").then((response)=>{
+//         return response.json() //returns a second promise.
+//    }).then((data)=>{
+//     console.log(data)
+//    }).catch((err)=>{
+//     console.log(err)
+//    })
+
+   const fetchData=async()=>{
+        const promise=await fetch("https://jsonplaceholder.typicode.com/users")
+        const data=await promise.json()
+        console.log(data)
+        // data.map((elem)=>{
+        //     document.getElementById("para").innerHTML=elem
+        // })
+   }
+   fetchData()
+
+
+</script>
+</html>

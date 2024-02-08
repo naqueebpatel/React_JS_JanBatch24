@@ -1,0 +1,128 @@
+// Async/await:
+// 1)Asynchronous operation perform.
+// 2)Async keyword is used to define.
+// 3)normal function ---> async keyword-->async function
+// 4)Returns a promise.
+
+
+// async function display(){
+//     console.log("HI JAVASCRIPT!")
+// }
+
+// console.log(display())
+
+// await keyword--> it pauses the executions.
+//                  it let others wait
+                 
+//                 async/await-->
+
+async function displayData(value){
+    return new Promise((resolve,reject)=>{
+        //perform some operation 3 secs.
+        setTimeout(()=>{
+            console.log("YOUR NAME IS",value)
+            resolve("OPERATION PERFORMED")   //state?-->resolved
+        },3000)
+    })
+}
+
+// await-->execution pause until the promise is resolved.
+// let promiseOne=displayData("ADIB")
+// console.log(promiseOne)
+// let promiseTwo=displayData("SAMEER")
+// console.log(promiseTwo)
+
+async function call(){
+    console.log("SAMEER STARTS THE TEST!")
+await displayData("SAMEER")
+console.log("SAMEER TEST END AND ADIB TEST STARTS")
+await displayData("ADIB")
+console.log("ADIBS TEST ENDS.")    
+}
+
+call()
+
+
+async function fetchData(id){
+    return new Promise((resolve,reject)=>{
+        if(id>10){
+            console.log("DATA FETCHED OF ID:",id)
+            resolve("PROMISE FULFILLED")
+        }
+        else{
+            console.log("DATA NOT FETCHED")
+            reject("PROMISE REJECTED")
+        }
+    })
+}
+
+// promise--> .then().catch()
+// async/await--> try catch finally
+
+
+async function call(){
+    //anything which is prone to errors we write it in try block
+    try{
+        // await fetchData(9)
+        let promise=await fetchData(12)
+        console.log(promise)
+    }catch(err){  //it catches the error thrown by try block
+        console.log(err)
+    }finally{  //irresepective of try catch it executes
+        console.log("EXECUTION FINISHED")
+    }
+}
+
+call()
+
+API CALLS?
+
+API - APPLICATION PROGRAMMING INTERFACE.
+IN THE FORM OF REQUEST OR RESPONSE OBJECT.
+FRONTEND-->REQUEST
+BACKEND---> RESPONSE
+
+JSON-->JAVA SCRIPT OBJECT NOTATION
+AJAX--> ADVANCE JS AND XML-->EXTENSIBLE MARKUP LANGUAGE
+
+fetch() method-->it is used to fetch data from a url.
+              --> promise
+              --> by default get --> HTTP VERBS?
+              
+              json() method-->IT IS USED TO CONVERT THE RESPONSE PROMISE FROM THE BACKEND INTO A READABLE DATA FORMAT AND IT ALSO RETURNS A SECOND PROMISE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

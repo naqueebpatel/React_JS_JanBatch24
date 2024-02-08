@@ -61,7 +61,7 @@ function billPaymentInterface(amount){
 billPaymentInterface(500)
 
 function billPaymentInterface(amount){
-    return new Promise((Resolve,reject)=>{
+    return new Promise((resolve,reject)=>{
         if(amount>=700){
             resolve("CONNECTION ACTIVE")
         }else{
