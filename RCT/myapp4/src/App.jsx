@@ -102,4 +102,3 @@ export default App
 // const [value,setValue]=useState(10);
 
 // console.log(value)
-
