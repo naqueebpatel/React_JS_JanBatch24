@@ -1,0 +1,99 @@
+// HOOKS?
+// IT IS USED TO EXTEND THE FUNCTIONALITIES OF REACT.
+// BASICALLY HOOKS ARE FUNCTIONS.
+
+// useEffect Hook
+
+// Pure functions and Impure Functions?
+
+
+// PURE FUNCTION?
+// --> PURE FUNC DOESN'T INTERACT WITH ANYTHING OUTSIDE ITS SCOPE.
+// -->IT DOESN'T PRODUCE ANY SIDE EFFECTS.
+// -->IT GIVES THE SAME OUTPUT EVERYTIME.
+
+// function numSum(valOne,valTwo){
+//     console.log(valOne+valTwo)
+// }
+
+// numSum(50,100)
+
+// numSum(50,100)
+
+// numSum(50,100)
+
+
+
+// IMPURE FUNCTION?
+// --> PURE FUNC INTERACT OUTSIDE ITS SCOPE.
+// -->IT PRODUCE SIDE EFFECTS.
+// -->IT GIVES THE DIFFERENT OUTPUT EVERYTIME.
+
+
+
+function randomOutput(value){
+    console.log(Math.random()*value)
+}
+
+randomOutput(10)
+
+randomOutput(10)
+
+
+randomOutput(10)
+
+// LIFECYCLE OF COMPONENT
+
+// --> BORN
+// --> LIFESPAN 
+// --> DIE
+
+// --> MOUNT PHASE 
+//     --WHEN THE COMPONENT IS ATTACTCHED TO THE UI.
+// --> UPDATE PHASE
+//     --WHEN THE COMPONENT GETS UPDATED.
+// --> UNMOUNT PHASE
+//     --WHEN THE COMPONENT IS REMOVED FROM THE UI.
+
+// useEffect-->HOOK 
+
+// useEffect( callBackfunc , [dependency array]) -->syntax
+// --> THE FIRST ONE TO GET EXECUTED IS THE useEffect
+
+
+// MOUNT PHASE:
+
+// useEffect( () =>{} )
+// // --> NO DEPENDENCY ARRAY
+// // --> useEffect runs on mount phase and on every render.
+
+// useEffect ( ()=>{} , [])
+
+// --> EMPTY DEPENDENCY ARRAY
+// --> useEffect runs on mount phase only and not on every render.
+// -->USED FOR THE INITIAL RUN
+
+// UPDATE PHASE:
+
+// useEffect ( ()=>{}, [value])
+
+// --> WE PASS A DEPENDENCY IN THE DEPENDENCY ARRAY.
+// --> useEffect runs on mount phase and when the DEPENDENCY changes.
+
+//UNMOUNT PHASE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
