@@ -11,6 +11,12 @@ const Counter=()=>{
 
   useEffect(()=>{
       console.log("use effect running..")
+
+
+      return ()=>{
+          console.log("CLEAN UP FUNCTION INVOKED")
+      }
+
   },[update])
 
   // const getData=()=>{
@@ -94,4 +100,13 @@ export default App
 // --> useEffect runs on mount phase and when the DEPENDENCY changes.
 
 //UNMOUNT PHASE:
+
+// useEffect( ()=>{
+
+
+//   return cleanupFunction ()=>{
+
+//   } ---> it runs on the unmount phase
+
+// },[])
 

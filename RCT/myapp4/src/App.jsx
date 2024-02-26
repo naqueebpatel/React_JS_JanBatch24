@@ -32,7 +32,7 @@ const [error,setError]=useState(false)
 
 const handlePost=()=>{
   setLoading(true)
-  fetch("https://jsonplaceholder.typicoe.com/posts")
+  fetch("https://jsonplaceholder.typicode.com/posts")
   .then(res=>res.json())
   .then((res)=>{
     console.log(res)
