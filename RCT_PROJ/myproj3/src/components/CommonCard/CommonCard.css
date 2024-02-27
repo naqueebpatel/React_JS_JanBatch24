@@ -1,0 +1,11 @@
+
+.mainDiv{
+    width:250px;
+    border:2px dotted black;
+}
+
+.cardImage{
+    margin-top:10px;
+    width:200px;
+    border-radius: 50%;
+}
