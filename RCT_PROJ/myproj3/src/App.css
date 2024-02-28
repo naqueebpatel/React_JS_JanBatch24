@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.searchBox{
+  margin:15px;
+  border-radius: 20px;
+  width:200px;
+  height:35px;
+}

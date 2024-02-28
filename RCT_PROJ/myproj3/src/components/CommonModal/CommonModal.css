@@ -1,0 +1,24 @@
+
+.modalDiv{
+    width:250px;
+    border:2px dotted black;
+}
+
+.cardImage{
+    margin-top:10px;
+    width:200px;
+    border-radius: 50%;
+}
+
+.modal-overlay{
+    position:fixed;
+    z-index: 1;
+    background-color: bisque;
+}
+
+.modal{
+    position: fixed;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color: aquamarine;
+}
