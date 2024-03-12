@@ -2,24 +2,14 @@ import React, { createContext, useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-
-
-//CREATE A CONTEXT
-
-export const AuthContext=createContext();
-
-
-
-//PROVIDE
-
-const payload={
-  value:true,
-  text:"HI REACT"
-}
+import { AuthContextProvider } from './context/AuthContext.jsx'
+import {ThemeContextProvider} from "./context/ThemeContext.jsx"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <AuthContext.Provider value={payload}>
-      <App />
-  </AuthContext.Provider>
+  <ThemeContextProvider>
+  <AuthContextProvider>
+    <App />
+  </AuthContextProvider>
+  </ThemeContextProvider>
 )
