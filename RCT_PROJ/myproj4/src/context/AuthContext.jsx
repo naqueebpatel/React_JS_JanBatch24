@@ -5,19 +5,23 @@ export const AuthContext=createContext();
 export const AuthContextProvider=({children})=>{
 
     const [isAuth,setAuth]=useState(false);
+    const [token,setToken]=useState("")
 
-    const login=()=>{
+    const login=(token)=>{
+        setToken(token)
         setAuth(true)
     }
 
     const logout=()=>{
+        setToken("")
         setAuth(false)
     }
    
     const payload={
         isAuth,
         login,
-        logout
+        logout,
+        token
     }
 
 
