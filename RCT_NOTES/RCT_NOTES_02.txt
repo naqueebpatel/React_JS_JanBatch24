@@ -1,0 +1,31 @@
+useReducer()
+
+syntax:
+
+const [state,dispatch]=useReducer(reducerFunc,initialState);
+
+1. reducerFunc:
+    -It is a js function.
+    -it is a pure function.
+    -it takes state and an action object as arguments
+    -it returns some value which becomes the state
+
+    const reducerFunc=(state,action)=>{
+        return ...;-->it will become the new state
+    }
+
+2. initialState:
+   -the value which we want initially
+
+3. state
+   -it represent the current value of state
+
+4. dispatch
+   -function which updates the value of state
+   -it takes an action object as an argument.
+   
+   i. action object --> {type:" ",payload:" "}
+     -it is js object
+     -it contains key-value pairs:
+      -type: it is a string which defines user intent
+      -payload: (optional)-->value which we want to set as a state
